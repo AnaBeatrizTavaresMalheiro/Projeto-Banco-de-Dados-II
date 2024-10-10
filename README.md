@@ -1,5 +1,26 @@
-# Modelo de Banco de Dados para Faculdade
+# Projeto de Migração de Dados: PostgreSQL para MongoDB
 
+Este projeto tem como objetivo migrar dados de um banco de dados local PostgreSQL para um banco de dados na nuvem MongoDB,através de um script em Java, aalém disso a solução incluirá funcionalidades de busca que permitirá a geração de relatórios a partir dos dados armazenados no MongoDB.
+## Estrutura do Projeto
+
+- *Java*: Linguagem de programação utilizada.
+- *Gradle*: Ferramenta de gerenciamento de build.
+- *PostgreSQL*: Banco de dados relacional de origem.
+- *MongoDB*: Banco de dados NoSQL de destino.
+- *ReilWay*: Servidor onde está armazena o banco de dados relacional PostgreSQL
+
+## Funcionalidades
+
+- Conectar ao banco de dados PostgreSQL local e extrair dados das tabelas.
+- Criar objetos em Java para cada instância das tabelas.
+- Inserir os dados extraídos no MongoDB.
+  
+## Tecnologias Utilizadas
+
+- *MongoDB Driver*: Para conectar e manipular o MongoDB a partir do Java.
+- *PostgreSQL JDBC Driver*: Para acessar e consultar o banco de dados PostgreSQL.
+
+## Sobre o Banco
 Este projeto consiste em um modelo de banco de dados desenvolvido para uma instituição acadêmica, com o objetivo de gerenciar eficientemente informações sobre alunos, professores, cursos, departamentos, disciplinas e a estrutura curricular dos cursos oferecidos.
 
 ## Entidades Principais
