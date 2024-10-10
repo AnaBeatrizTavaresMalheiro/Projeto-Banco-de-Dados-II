@@ -1,6 +1,6 @@
 # Projeto de Migração de Dados: PostgreSQL para MongoDB
 
-Este projeto tem como objetivo migrar dados de um banco de dados local PostgreSQL para um banco de dados na nuvem MongoDB,através de um script em Java, aalém disso a solução incluirá funcionalidades de busca que permitirá a geração de relatórios a partir dos dados armazenados no MongoDB.
+Este projeto tem como objetivo migrar dados de um banco de dados local PostgreSQL para um banco de dados na nuvem MongoDB,através de um script em Java, além disso a solução inclui a funcionalidades de busca que permitirá a geração de relatórios a partir dos dados armazenados no MongoDB.
 ## Estrutura do Projeto
 
 - *Java*: Linguagem de programação utilizada.
