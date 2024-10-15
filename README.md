@@ -1,4 +1,4 @@
-# Projeto de Migração de Dados: PostgreSQL para MongoDB
+# Projeto de Migração de Dados: PostgreSQL para MongoDB (Document Store)
 
 Este projeto tem como objetivo migrar dados de um banco de dados local PostgreSQL para um banco de dados na nuvem MongoDB,através de um script em Java, além disso a solução inclui a funcionalidades de busca que permitirá a geração de relatórios a partir dos dados armazenados no MongoDB.
 ## Estrutura do Projeto
@@ -44,10 +44,10 @@ Este modelo de banco de dados oferece uma estrutura robusta para a gestão acad�
 
 ## Instruções de Uso
 
-1. Clone este repositório em seu ambiente local.
-2. Importe o script SQL para criar o banco de dados e suas tabelas.
-3. Utilize as consultas SQL fornecidas para gerar os relatórios desejados.
-4. Consulte a documentação para obter detalhes sobre a estrutura do banco de dados e a sintaxe das consultas.
+1. Baixe o projeto ""
+2. Adicione a senha do banco de dados encaminhada pelos owners do projeto
+
+3. Execute o código
 
 ## Autores
 <img src="https://avatars.githubusercontent.com/u/84588132?v=4" alt="Ana Beatriz Tavares" width="150"/> | <img src="https://avatars.githubusercontent.com/u/103201200?v=4" alt="Bruno Andwele" width="150"/> |
