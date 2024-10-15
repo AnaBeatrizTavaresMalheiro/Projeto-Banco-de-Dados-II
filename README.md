@@ -47,10 +47,7 @@ Este modelo de banco de dados oferece uma estrutura robusta para a gestão acad�
 1. Baixe o projeto "ProjetoBancodeDadosMongoDB"
 2. Acesse a pasta src/main/java/mongodb/org/example/
 3. Rode o arquivo Main.java
-4. Adicione a senha do banco de dados encaminhada pelos owners do projeto
-
-
-5. Execute o código
+4. Execute o código
 
 ## Autores
 <img src="https://avatars.githubusercontent.com/u/84588132?v=4" alt="Ana Beatriz Tavares" width="150"/> | <img src="https://avatars.githubusercontent.com/u/103201200?v=4" alt="Bruno Andwele" width="150"/> |
