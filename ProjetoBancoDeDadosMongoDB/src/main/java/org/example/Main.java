@@ -16,7 +16,7 @@ public class Main {
 
     private static final String URL = "jdbc:postgresql://autorack.proxy.rlwy.net:57661/railway";
     private static final String USER = "postgres";
-    private static final String PASSWORD = "BvzKsFbCslzRtGiWrrelANloUarxsVCZ";
+    private static final String PASSWORD = "";
 
     // Substitua pelo nome do seu banco de dados
     private static String dbName = "Faculdade";
