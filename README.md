@@ -51,8 +51,8 @@ Este modelo de banco de dados oferece uma estrutura robusta para a gestão acad�
 5. Acrescente as senhas fornecida via Moodle.
    ![image](https://github.com/user-attachments/assets/96fd48f6-65d0-428f-902c-7a07496d4bc9)
 
-7. Execute o arquivo `Main.java` para realizar a migração de dados,criar as relações no MongoDB e verificar consultas.
-8. Consulte o terminal.
+6. Execute o arquivo `Main.java` para realizar a migração de dados,criar as relações no MongoDB e verificar consultas.
+7. Consulte o terminal.
 
 ## Autores
 <img src="https://avatars.githubusercontent.com/u/84588132?v=4" alt="Ana Beatriz Tavares" width="150"/> | <img src="https://avatars.githubusercontent.com/u/103201200?v=4" alt="Bruno Andwele" width="150"/> |
