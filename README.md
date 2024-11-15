@@ -3,11 +3,11 @@
 Este projeto tem como objetivo migrar dados de um banco de dados local PostgreSQL para um banco de dados na nuvem MongoDB,através de um script em Java, além disso a solução inclui a funcionalidades de busca que permitirá a geração de relatórios a partir dos dados armazenados no MongoDB.
 ## Estrutura do Projeto
 
-- *Java*: Linguagem de programação utilizada.
-- *Gradle*: Ferramenta de gerenciamento de build.
-- *PostgreSQL*: Banco de dados relacional de origem.
-- *MongoDB*: Banco de dados NoSQL de destino.
-- *ReilWay*: Servidor onde está armazena o banco de dados relacional PostgreSQL
+- **Java**: Linguagem de programação utilizada.
+- **Gradle**: Ferramenta de gerenciamento de build.
+- **PostgreSQL**: Banco de dados relacional de origem.
+- **MongoDB**: Banco de dados NoSQL de destino.
+- **ReilWay**: Servidor onde está armazena o banco de dados relacional PostgreSQL
 
 ## Funcionalidades
 
@@ -50,8 +50,8 @@ Este modelo de banco de dados oferece uma estrutura robusta para a gestão acad�
 4. Acesse o arquivo 'Main.java'
 5. Acrescente as senhas fornecida via Moodle.
    ![image](https://github.com/user-attachments/assets/913d86b3-6b66-42f8-8aad-71bd78338c89)
-7. Execute o arquivo `Main.java` para realizar a migração de dados,criar as relações no Neo4j e verificar consultas.
-8. Utilize o painel do Neo4j ou consulte o terminal.
+7. Execute o arquivo `Main.java` para realizar a migração de dados,criar as relações no MongoDB e verificar consultas.
+8. Consulte o terminal.
 
 ## Autores
 <img src="https://avatars.githubusercontent.com/u/84588132?v=4" alt="Ana Beatriz Tavares" width="150"/> | <img src="https://avatars.githubusercontent.com/u/103201200?v=4" alt="Bruno Andwele" width="150"/> |
