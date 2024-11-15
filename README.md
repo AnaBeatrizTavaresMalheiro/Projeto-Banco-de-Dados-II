@@ -17,8 +17,8 @@ Este projeto tem como objetivo migrar dados de um banco de dados local PostgreSQ
   
 ## Tecnologias Utilizadas
 
-- *MongoDB Driver*: Para conectar e manipular o MongoDB a partir do Java.
-- *PostgreSQL JDBC Driver*: Para acessar e consultar o banco de dados PostgreSQL.
+- **MongoDB Driver**: Para conectar e manipular o MongoDB a partir do Java.
+- **PostgreSQL JDBC Driver**: Para acessar e consultar o banco de dados PostgreSQL.
 
 ## Sobre o Banco
 Este projeto consiste em um modelo de banco de dados desenvolvido para uma instituição acadêmica, com o objetivo de gerenciar eficientemente informações sobre alunos, professores, cursos, departamentos, disciplinas e a estrutura curricular dos cursos oferecidos.
