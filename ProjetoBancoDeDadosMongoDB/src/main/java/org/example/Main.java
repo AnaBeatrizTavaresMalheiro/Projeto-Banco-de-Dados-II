@@ -10,6 +10,7 @@ import tabelas.*;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 
 public class Main {
@@ -22,7 +23,7 @@ public class Main {
     private static String dbName = "Faculdade";
 
     // Sua string de conexão
-    private static String uri = "mongodb+srv://bruno:b3a43mongo@projetomongo.hdjpt.mongodb.net/?retryWrites=true&w=majority&appName=ProjetoMongo";
+    private static String uri = "";
 
     public static void main(String[] args) {
         try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD)) {
@@ -39,12 +40,66 @@ public class Main {
 
             MongoDBService mongoDBService = new MongoDBService(uri, dbName, professores, departamentos, cursos, alunos, disciplinas, matrizCurricular, historicoAlunos, grupoAlunos, historicoTCC, historicoProfessores);
             mongoDBService.insertDataIntoDB();
-            //mongoDBService.buscarHistoricoEscolarAluno("Luiz");
-            //mongoDBService.buscarHistoricoDisciplinasProfessor("Pedro");
-            //mongoDBService.listarAlunosFormadosNoAno(2003);
-            mongoDBService.listarChefesDepartamentos();
-            mongoDBService.listarAlunosEOrientadoresTCC();
-            mongoDBService.close();
+            mongoDBService.showAllData();
+
+            Scanner scanner = new Scanner(System.in);
+
+            while (true) {
+                System.out.println("\nEscolha uma opção:");
+                System.out.println("0 - Mostrar todas as tabelas e dados");
+                System.out.println("1 - Buscar histórico escolar do aluno");
+                System.out.println("2 - Buscar histórico de disciplinas do professor");
+                System.out.println("3 - Listar alunos formados no ano");
+                System.out.println("4 - Listar chefes de departamentos");
+                System.out.println("5 - Listar alunos e orientadores de TCC");
+                System.out.println("6 - Sair");
+
+                System.out.print("Digite sua escolha: ");
+                int escolha = scanner.nextInt();
+                scanner.nextLine(); // Consumir a quebra de linha
+                System.out.println("----------------------------------------------------------------");
+                switch (escolha) {
+                    case 0:
+                        mongoDBService.showAllData();
+                        break;
+                    case 1:
+                        System.out.print("Digite o nome do aluno: ");
+                        String nomeAluno = scanner.nextLine();
+                        mongoDBService.buscarHistoricoEscolarAluno(nomeAluno);
+                        break;
+
+                    case 2:
+                        System.out.print("Digite o nome do professor: ");
+                        String nomeProfessor = scanner.nextLine();
+                        mongoDBService.buscarHistoricoDisciplinasProfessor(nomeProfessor);
+                        break;
+
+                    case 3:
+                        System.out.print("Digite o ano: ");
+                        int ano = scanner.nextInt();
+                        mongoDBService.listarAlunosFormadosNoAno(ano);
+                        break;
+
+                    case 4:
+                        mongoDBService.listarChefesDepartamentos();
+                        break;
+
+                    case 5:
+                        mongoDBService.listarAlunosEOrientadoresTCC();
+                        break;
+
+                    case 6:
+                        System.out.println("Encerrando o programa.");
+                        mongoDBService.close();
+                        scanner.close();
+                        return;
+
+                    default:
+                        System.out.println("Opção inválida. Tente novamente.");
+                }
+                System.out.println("----------------------------------------------------------------");
+
+            }
 
         } catch (SQLException e) {
             e.printStackTrace();

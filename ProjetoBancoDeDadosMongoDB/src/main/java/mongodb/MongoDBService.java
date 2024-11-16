@@ -57,19 +57,58 @@ public class MongoDBService {
         this.historicoProfessores = historicoProfessores;
     }
 
+    public void showAllData() {
+        // Lista de coleções que serão exibidas
+        String[] collections = {
+                "professores",
+                "departamentos",
+                "cursos",
+                "alunos",
+                "disciplinas",
+                "matriz_curricular",
+                "historico_alunos",
+                "grupo_alunos",
+                "historico_tcc",
+                "historico_professores"
+        };
+
+        for (String collectionName : collections) {
+            System.out.println("Coleção: " + collectionName);
+            try {
+                MongoCollection<Document> collection = database.getCollection(collectionName);
+                for (Document doc : collection.find()) {
+                    System.out.println(doc.toJson());
+                }
+            } catch (Exception e) {
+                System.out.println("Erro ao mostrar dados da coleção " + collectionName + ": " + e.getMessage());
+            }
+        }
+    }
+
     public void insertDataIntoDB() {
-        System.out.println("MongoDB - Trying to inset data");
+        System.out.println("Apagando tabelas existentes");
         mongoClient.getDatabase(this.dbName).drop();
+        System.out.println("MongoDB - Inserindo dados no MongoDB");
         insertProfessores(professores);
+        System.out.println("Inseriu: professores");
         insertDepartamentos(departamentos);
+        System.out.println("Inseriu: departamentos");
         insertCursos(cursos);
+        System.out.println("Inseriu: cursos");
         insertAlunos(alunos);
+        System.out.println("Inseriu: alunos");
         insertDisciplinas(disciplinas);
+        System.out.println("Inseriu: disciplinas");
         insertMatrizCurricular(matrizCurricular);
+        System.out.println("Inseriu: matrizCurricular");
         insertHistoricoAlunos(historicoAlunos);
+        System.out.println("Inseriu: historicoAlunos");
         insertGrupoAlunos(grupoAlunos);
+        System.out.println("Inseriu: grupoAlunos");
         insertHistoricoTCC(historicoTCC);
+        System.out.println("Inseriu: historicoTCC");
         insertHistoricoProfessores(historicoProfessores);
+        System.out.println("Inseriu: historicoProfessores");
     }
 
     public void insertProfessores(List<Professor> professores) {
