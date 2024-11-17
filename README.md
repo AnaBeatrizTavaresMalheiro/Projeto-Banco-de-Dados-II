@@ -49,7 +49,7 @@ Este modelo de banco de dados oferece uma estrutura robusta para a gestão acad�
 3. Acesse a pasta src/main/java/mongodb/org/example/
 4. Acesse o arquivo 'Main.java'
 5. Acrescente as senhas fornecida via Moodle.
-   ![image](https://github.com/user-attachments/assets/96fd48f6-65d0-428f-902c-7a07496d4bc9)
+   <img width="899" alt="image" src="https://github.com/user-attachments/assets/4bee2a8f-375d-4423-a886-407f059b63f3">
 
 6. Execute o arquivo `Main.java` para realizar a migração de dados,criar as relações no MongoDB e verificar consultas.
 7. Consulte o terminal para interagir com o menu para realizar as querys e visualizar os dados.
